@@ -1,0 +1,30 @@
+.sidenav {
+    left: 0px;
+    transition: .5s;
+    transition-property: left;
+    margin-top: 56px;
+}
+
+.sidenav.close{
+    left: -208px;
+}
+
+.main {
+    margin-left: 208px;
+    transition: .5s;
+    transition-property: margin-left;
+}
+
+.main.close {
+    margin-left: 0px;;
+}
+
+// .content {
+//     margin-left: 208px;
+//     transition: .5s;
+//     transition-property: margin-left;
+// }
+
+// .content.close{
+//     margin-left: 0px;
+// }
