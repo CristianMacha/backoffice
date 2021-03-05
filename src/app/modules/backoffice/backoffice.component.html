@@ -1,32 +1,15 @@
-<div class="flex w-full h-full">
+<div class="flex w-full">
 
     <!-- Nav start -->
-    <div id="nav" class="fixed w-52 bg-blue-500 h-full sidenav close">
-        nav
+    <div id="nav" class="fixed w-52 bg-gray-700 h-screen pb-14 sidenav">
+        <app-sidenav></app-sidenav>
     </div>
     <!-- Nav end -->
 
 
-    <div id="content" class="w-full content close">
+    <div id="content" class="w-full content">
         <!-- Header start -->
-        <div class="fixed bg-blue-700 w-full">
-            <div>
-                <div class="flex flex-wrap content-center h-14 justify-between px-2">
-                    <div class="flex">
-                        <div>
-                            <img src="/assets/icons/icon-128x128.png" width="50" height="50">
-                        </div>
-                        <div class="flex flex-wrap content-center">
-                            <icon-menu class="w-6 text-white hover:text-gray-300 cursor-pointer" (click)="togleMenu()">
-                            </icon-menu>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap content-center">
-                        <icon-user class="w-8 text-white hover:text-gray-300 cursor-pointer"></icon-user>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <app-header></app-header>
         <!-- Content start -->
         <div id="main" class="mt-14 main bg-red-200">
             <router-outlet></router-outlet>
